@@ -1,0 +1,39 @@
+- mostrar os banco de dados criados
+show databases;
+
+-- criar o banco de dados
+create database aranoua_java_web;
+
+-- acessar o banco de dados
+use aranoua_java_web;
+
+-- mostrar tabelas do banco de dados
+show tables;
+
+-- criar tabela
+create table pessoa(
+id int auto_increment primary key,
+nome varchar(255) not null,
+email varchar(255) not null unique
+);
+
+-- inserir
+insert into pessoa
+(nome,email)
+values
+('Carlos','carlos@ifam.edu.br');
+
+-- listar
+select id,nome,email from pessoa;
+
+-- alterar
+update pessoa
+set nome = 'João'
+where id = 1;
+
+-- deletar
+delete from pessoa
+where id = 1;
+
+-- excluir tabela
+drop table pessoa;
