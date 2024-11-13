@@ -12,7 +12,7 @@ public class TestaConexaoBD {
 
         try {
 
-            Pessoa pessoa = new Pessoa("Pessoa 82",  "emailpessoa82@ifam.edu");
+            Pessoa pessoa = new Pessoa( 7, "Pessoa 05",  "emailpessoa05@ifam.edu");
 
             Connection conexao = DriverManager.getConnection(url, usuario, senha);
             System.out.println("Conexâo realizada!");
@@ -25,8 +25,8 @@ public class TestaConexaoBD {
                          " ('"+pessoa.getNome()+"','"+pessoa.getEmail()+"')";
 
             String sqlAlterar = "update pessoa" +
-                                " set nome = 'João'" +
-                                " where id = 1";
+                                " set nome = '"+pessoa.getNome()+"'" +
+                                " where id = "+pessoa.getId();
 
 
             String sqlDeletar = "delete from pessoa" +
