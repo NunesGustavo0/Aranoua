@@ -1,0 +1,24 @@
+h1, h2, p, h3{
+    color: aqua;
+    text-align: justify;
+    background-color: dimgray;
+    font-size: 20px;
+}
+
+.cabecalhos{
+    color:orange;
+    background-color: darkkhaki;
+    text-align: center;
+    font-size: 40px;
+}
+
+#cabecalhoEspecifico{
+    color: ghostwhite;
+    background-color: gray;
+}
+
+.primeiroParagrafo{
+    background-color: darkred;
+    text-align: end;
+    color: antiquewhite;
+}
