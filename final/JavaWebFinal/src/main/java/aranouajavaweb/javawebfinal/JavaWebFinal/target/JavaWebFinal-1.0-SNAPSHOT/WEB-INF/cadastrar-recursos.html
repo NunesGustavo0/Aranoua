@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Recurso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Cadastrar Recurso</h1>
+
+<form action="insere-recurso" method="POST">
+
+    <label for="recurso_equipamento">Equipamento:</label>
+    <input id="recurso_equipamento" type="text" name="equipamento" required>
+    <br><br>
+
+    <label for="recurso_marca">Marca:</label>
+    <input id="recurso_marca" type="text" name="marca" required>
+    <br><br>
+
+    <label for="recurso_modelo">Modelo:</label>
+    <input id="recurso_modelo" type="text" name="modelo" required>
+    <br><br>
+
+    <input type="reset" name="limpar" value="Limpar">
+    <input type="submit" name="enviar" value="Enviar">
+
+</form>
+
+
+</body>
+</html>
