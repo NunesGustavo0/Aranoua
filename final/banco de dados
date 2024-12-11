@@ -1,0 +1,28 @@
+show databases;
+
+create database JavaWebFinal;
+
+use JavaWebFinal;
+
+create table recursos(
+numeroTombo int auto_increment primary key,
+equipamento varchar(255) not null,
+marca varchar(255) not null,
+modelo varchar(255) not null unique 
+);
+select numeroTombo,equipamento,marca, modelo from recursos;
+
+insert into recursos
+(equipamento,marca,modelo)
+values
+('Placa de video','NVIDIA', 'RTX 2050');
+
+insert into recursos
+(equipamento,marca,modelo)
+values
+('Fonte','CORSAIR', '500W');
+
+insert into recursos
+(equipamento,marca,modelo)
+values
+('Notebook','Lenovo', 'i3');
